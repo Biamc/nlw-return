@@ -151,8 +151,7 @@ header img {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+ 
 
   height: var(--nav-height);
   /*padding: 1.6rem 2.4rem;
@@ -166,12 +165,23 @@ nav {
   transform: translate(-50%);
 }
 
-
+nav .wrapper/*na aula o professor colocou o espaço de forma errada, o certo é nao colocar espaço, ou seja : "tag.nomedaclasse"*/ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 nav.scroll {
   background-color: var(--primary-color);
+  width: 100vw;
 }
 
+nav.scroll svg:nth-child(1) path {
+  fill: white;
+}
+ nav.scroll svg:nth-child(2) path {
+   stroke: white;
+ }
 
 
  
